@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>YASHPAL KATIYAR - HOME</title>
+  <meta name="description" content="Yashpal Katiyar, web developer and Competitive Programmer. Working with HTML,CSS AND JS to create incredible front end experiences.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/yk2.png">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="https://use.typekit.net/whr0cxq.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+
+</head>
+
+<body>
+  <h1 style="display: none;">Yashpal Katiyar, Web Developer and Competitive Programmer</h1>
+    <div class="main-content">
+        <p class="tag">&lt;body&gt;</p>
+            <div onclick="Hamburger()" id="openclose" class="ham"></div>
+            <div id="nav" class="none">
+                <a class="home" href="index.html"><p>HOME</p></a>
+                <a class="about" href="about.html"><p>ABOUT</p></a>
+                <a class="projects" href="projects.html"><p>PROJECTS</p></a>
+                <a class="contact" href="contact.html"><p>CONTACT</p></a>
+                <!-- <div class="icons">
+                    <img src="SocialIcons/github.png">
+                    <img src="SocialIcons/instagram.png">
+                    <img src="SocialIcons/linkedin.png">
+                    <img src="SocialIcons/medium.png">
+
+                </div> -->
+            </div>
+
+        <h1 id="op"> </h1>
+        <!-- <h1 class="op">I'm Yashpal, <br/> Web Developer</h1> -->
+        <p>Front End Developer / Javascript / C++</p>
+        <div class="icons">
+                <a href="https://github.com/yashpal-97" title="yashpal_97"><img src="images/github.png"></a>
+                <a href="https://www.instagram.com/yashpal_katiyar/" title="yashpal_katiyar"><img src="images/instagram.png"></a>
+                <a href="https://www.linkedin.com/in/Yashpal Katiyar/" title="Yashpal_Katiyar"><img src="images/linkedin.png"></a>
+                
+
+            </div>
+            <button type="button" onclick="magic() " title="For Fun">Click ME</button>
+            <!-- <button type="button" onclick="magic2() " title="For Fun">Click for Title</button> -->
+  
+      
+        <p class="tag-end">&lt;/body&gt;</p>
+      
+    </div>
+    <script>
+      document.getElementById('op').innerHTML="I'm Yashpal, <br/> Web Developer";
+      // let a=document.querySelector('button');
+      // a.addEventListener('click',magic);
+      
+       function magic(){
+        let  name=prompt('enter your name:-');
+        if(name.size>0){
+          let occupation=prompt('enter');
+        }
+         document.getElementById('op').innerHTML="I'm "+name+", <br/> Web Developer " ;
+         
+         // a.textContent="I'm " +name +"<br/> Web Developer";
+        
+       }
+      //  function magic2(){
+      //   let occupation=promt('enter your hobby :-');
+      //   document.getElementById('op').innerHTML="I'm "+name+", <br/ "+ occupation ;
+      //  }
+
+    </script>
+    <!-- <script>
+      alert('still under development');
+    </script> -->
+
+  <script src="scripts.js"></script>
+</body>
+</html>
