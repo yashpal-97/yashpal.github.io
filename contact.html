@@ -12,6 +12,7 @@
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="https://use.typekit.net/whr0cxq.css">
   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/clock.css">
 
 </head>
 
@@ -37,6 +38,18 @@
 
             </div>
             <a href="mailto:venomaxon@gmail.com"><button>SEND A MESSAGE</button></a>
+        </br>
+        <body onLoad="initClock()">
+
+            <div id="timedate">
+              <a id="mon">January</a>
+              <a id="d">1</a>,
+              <a id="y">0</a><br />
+              <a id="h">12</a> :
+              <a id="m">00</a>:
+              <a id="s">00</a>:
+              <a id="mi">000</a>
+            </div>
     
         
 
@@ -44,5 +57,6 @@
     </div>
 
   <script src="scripts.js"></script>
+   <script src="clock.js"></script>
 </body>
 </html>
