@@ -11,6 +11,42 @@
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="https://use.typekit.net/whr0cxq.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/clock.css">
+    <style>
+    /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0a0a0a; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(37, 7, 97); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(198, 14, 14); 
+}
+.main-content{
+  overflow: scroll;
+   padding-inline-start: 50px;
+  /*padding-block-end: 2px;
+  padding-bottom: 200px; */
+  
+}
+.auto{
+  padding: 20px;
+  font-size: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(13, 2, 22);
+
+}
+ </style>
   
 
 </head>
@@ -18,7 +54,7 @@
 <body>
   <h1 style="display: none;">Yashpal Katiyar, Web Developer and Competitive Programmer</h1>
     <div class="main-content">
-        <p class="tag">&lt;body&gt;</p>
+        
             <div onclick="Hamburger()" id="openclose" class="ham"></div>
             <div id="nav" class="none">
                 <a class="home" href="index.html"><p>HOME</p></a>
@@ -35,24 +71,45 @@
             </div>
 
         <h1 id="op"> </h1>
+      <h3 class="auto">Web Developer</h3>
         <!-- <h1 class="op">I'm Yashpal, <br/> Web Developer</h1> -->
         <p>Front End Developer / Javascript / C++</p>
         <div class="icons">
                 <a href="https://github.com/yashpal-97" title="yashpal_97"><img src="images/github.png"></a>
                 <a href="https://www.instagram.com/yashpal_katiyar/" title="yashpal_katiyar"><img src="images/instagram.png"></a>
                 <a href="https://www.linkedin.com/in/yashpal-katiyar-433843230/" title="Yashpal_Katiyar"><img src="images/linkedin.png"></a>
-                
-
-            </div>
-            <button type="button" onclick="magic() " title="For Fun">Click ME</button>
-            <!-- <button type="button" onclick="magic2() " title="For Fun">Click for Title</button> -->
-  
+                <button type="button" onclick="magic() " title="For Fun">Click ME</button>
       
-        <p class="tag-end">&lt;/body&gt;</p>
+      </div>
+            
+            <!-- <button type="button" onclick="magic2() " title="For Fun">Click for Title</button> -->
+   <body onLoad="initClock()">
+
+              <div id="timedate">
+                <a id="mon">January</a>
+                <a id="d">1</a>,
+                <a id="y">0</a><br />
+                <a id="h">12</a> :
+                <a id="m">00</a>:
+                <a id="s">00</a>:
+                <a id="mi">000</a>
+              </div>
+            <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      
+        
       
     </div>
     <script>
-      document.getElementById('op').innerHTML="I'm Yashpal, <br/> Web Developer";
+      document.getElementById('op').innerHTML="I'm Yashpal, <br/>";
       // let a=document.querySelector('button');
       // a.addEventListener('click',magic);
       
@@ -61,21 +118,27 @@
         if(name.size>0){
           let occupation=prompt('enter');
         }
-         document.getElementById('op').innerHTML="I'm "+name+", <br/> Web Developer " ;
-         
-         // a.textContent="I'm " +name +"<br/> Web Developer";
-        
+         document.getElementById('op').innerHTML="Hey I'm "+name+",<br/> " ;
        }
-      //  function magic2(){
-      //   let occupation=promt('enter your hobby :-');
-      //   document.getElementById('op').innerHTML="I'm "+name+", <br/ "+ occupation ;
-      //  }
+         
+        
+       
+   
 
     </script>
-    <<script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+     <script>
+      var typed =new Typed(".auto",{
+        strings :["Web Developer", "Competitive Programmer","Student"],
+        typeSpeed:120,backSpeed:80,loop:true,
+      });
+
+     </script>
+    <script>
       alert('still under development please open on desktop');
     </script>
 
   <script src="scripts.js"></script>
+        <script src="clock.js"></script>
 </body>
 </html>
