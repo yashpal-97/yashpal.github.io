@@ -12,49 +12,58 @@
   <link rel="stylesheet" href="https://use.typekit.net/whr0cxq.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/clock.css">
-    <style>
-    /* width */
-::-webkit-scrollbar {
+  <!-- <link rel="stylesheet" href="button.css"> -->
+  <style>
+    /*  width */
+ ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
+
 ::-webkit-scrollbar-track {
   background: #0a0a0a; 
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(37, 7, 97); 
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(198, 14, 14); 
-}
-.main-content{
-  overflow: scroll;
+} 
+ .main-content{
+  overflow-y: scroll;
    padding-inline-start: 50px;
-  /*padding-block-end: 2px;
-  padding-bottom: 200px; */
+  /* padding-block-end: 2px;
+  padding-bottom: 200px;  */
   
-}
+}  
+
 .auto{
   padding: 20px;
   font-size: 60px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(13, 2, 22);
+  color: rgb(235, 229, 239);
 
 }
+.ykking{
+  background-image: linear-gradient(rgb(31, 30, 30),rgb(15, 2, 39));
+
+                
+                /* overflow:scroll; */
+                
+}
+
  </style>
   
 
 </head>
 
-<body>
+<body class="ykking">
   <h1 style="display: none;">Yashpal Katiyar, Web Developer and Competitive Programmer</h1>
     <div class="main-content">
-        
+        <!-- <p class="tag">&lt;body&gt;</p> -->
             <div onclick="Hamburger()" id="openclose" class="ham"></div>
             <div id="nav" class="none">
                 <a class="home" href="index.html"><p>HOME</p></a>
@@ -71,19 +80,26 @@
             </div>
 
         <h1 id="op"> </h1>
-      <h3 class="auto">Web Developer</h3>
+        <h3 class="auto">Web Developer</h3>
         <!-- <h1 class="op">I'm Yashpal, <br/> Web Developer</h1> -->
-        <p>Front End Developer / Javascript / C++</p>
+      <strong>  <p>Front End Developer / Javascript / C++</p></strong>
         <div class="icons">
-                <a href="https://github.com/yashpal-97" title="yashpal_97" target="_blank"><img src="images/github.png"></a>
-                <a href="https://www.instagram.com/yashpal_katiyar/" title="yashpal_katiyar" target="_blank"><img src="images/instagram.png"></a>
-                <a href="https://www.linkedin.com/in/yashpal-katiyar-433843230/" title="Yashpal_Katiyar" target="_blank"><img src="images/linkedin.png"></a>
-                <button type="button" onclick="magic() " title="For Fun">Click ME</button>
-      
-      </div>
+                <a href="https://github.com/yashpal-97" title="yashpal_97"><img src="images/github.png"></a>
+                <a href="https://www.instagram.com/yashpal_katiyar/" title="yashpal_katiyar"><img src="images/instagram.png"></a>
+                <a href="https://www.linkedin.com/in/yashpal-katiyar-433843230/" title="Yashpal_Katiyar"><img src="images/linkedin.png"></a>
+               <!-- <a href="https://drive.google.com/file/d/1iDmooGdHkACs5nX-ZMPE6ScWEfz65eNS/view?usp=drivessdk" download="resume" id="yk2"><button>download</button></a> -->
+                <!-- <button type="button" onclick="magic() " title="For Fun" id="yk2">Click ME</button> -->
+            </div>
+               <!-- <button type="button" onclick="magic() " title="For Fun">Click ME</button> -->
             
+              <!-- <a href="https://drive.google.com/file/d/1iDmooGdHkACs5nX-ZMPE6ScWEfz65eNS/view?usp=drivessdk" download="resume" id="yk2">DOWNLOAD CV</a> -->
+            
+           
+              <button> <a href="https://drive.google.com/file/d/1iDmooGdHkACs5nX-ZMPE6ScWEfz65eNS/view?usp=drivessdk" download="resume" id="yk2" style="text-decoration: none;">DOWNLOAD CV</a></button>
+            
+              <button type="button" onclick="magic() " title="For Fun" id="yk2">Click ME</button>
             <!-- <button type="button" onclick="magic2() " title="For Fun">Click for Title</button> -->
-   <body onLoad="initClock()">
+          <body onLoad="initClock()">
 
               <div id="timedate">
                 <a id="mon">January</a>
@@ -94,51 +110,49 @@
                 <a id="s">00</a>:
                 <a id="mi">000</a>
               </div>
-            <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+           
+  
       
+       
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <p class="tag-end">&lt;/body&gt;</p> -->
         
       
     </div>
     <script>
-      document.getElementById('op').innerHTML="I'm Yashpal, <br/>";
-      // let a=document.querySelector('button');
-      // a.addEventListener('click',magic);
-      
+      document.getElementById('op').innerHTML=" Hey, <br/>I'm Yashpal Katiyar, <br/> ";
        function magic(){
         let  name=prompt('enter your name:-');
         if(name.size>0){
           let occupation=prompt('enter');
         }
          document.getElementById('op').innerHTML="Hey I'm "+name+",<br/> " ;
-       }
          
-        
-       
-   
-
-    </script>
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+          }
+     </script>
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
      <script>
       var typed =new Typed(".auto",{
         strings :["Web Developer", "Competitive Programmer","Student"],
         typeSpeed:120,backSpeed:80,loop:true,
       });
 
+  
      </script>
-    <script>
-      alert('still under development please open on desktop');
+     <script>
+      alert('please open in a bigger screen if possible');
     </script>
 
   <script src="scripts.js"></script>
-        <script src="clock.js"></script>
+  <script src="clock.js"></script>
 </body>
 </html>
