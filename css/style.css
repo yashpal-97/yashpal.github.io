@@ -41,7 +41,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 99vh;
-  background-image: linear-gradient(rgb(31, 30, 30),rgb(15, 2, 39));
+ /* background-image: linear-gradient(rgb(31, 30, 30),rgb(15, 2, 39));*/
   padding: 50px 50px 50px 100px;
   position: relative; }
   .main-content .ham {
