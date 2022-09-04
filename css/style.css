@@ -35,7 +35,7 @@
 
 .main-content {
   overflow-x: hidden;
-  background: url("../images/background.png");
+  /*background: url("../images/background.png");*/
   background-position: right;
   /* Center the image */
   background-repeat: no-repeat;
