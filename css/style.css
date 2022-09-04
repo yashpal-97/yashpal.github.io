@@ -172,6 +172,7 @@
   .icons a {
     margin-right: 20px; }
   .icons img {
+       background-color:bisque ;
     display: inline-block;
     height: 25px;
     opacity: .3;
