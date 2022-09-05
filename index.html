@@ -148,8 +148,12 @@
 
   
      </script>
-     <script>
-      alert('please open in a bigger screen if possible');
+      <script type="text/javascript">
+        var alerted = localStorage.getItem('alerted') || '';
+        if (alerted != 'yes') {
+         alert("This site looks better on a bigger screen ");
+         localStorage.setItem('alerted','yes');
+        }
     </script>
 
   <script src="scripts.js"></script>
