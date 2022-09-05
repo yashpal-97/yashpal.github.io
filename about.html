@@ -8,6 +8,9 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/yk2.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Press+Start+2P&display=swap" rel="stylesheet">
 
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="https://use.typekit.net/whr0cxq.css">
@@ -16,8 +19,15 @@
   <style>
  
     .main-content{
-        overflow: scroll;
-    }
+  
+   padding-inline-start: 50px;
+  /*padding-block-end: 2px;
+  padding-bottom: 200px; */
+  
+}
+.about-container{
+    padding-inline-start: 50px;
+}
     .ykking{
   background-image: linear-gradient(rgb(31, 30, 30),rgb(15, 2, 39));
 }
@@ -26,7 +36,7 @@
 
 </head>
 
-<body>
+<body class="ykking">
     <div style="background-position-x: 120px;" class="main-content">
         <p class="tag">&lt;body&gt;</p>
             <div style="overflow: hidden;" onclick="Hamburger()" id="openclose" class="ham"></div>
